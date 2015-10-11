@@ -1,0 +1,34 @@
+.intro{
+  border: 1px solid #ccc;
+  padding: .5em .3em;
+  margin: 1em;
+  display: block;
+  position: relative;
+
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    // border-left: 0;
+    border-top: 0;
+  }
+  /* Stroke */
+  &:before{
+    top: -10px;
+    left: 12px;
+    /* If 1px darken stroke slightly */
+    border-bottom-color: #aaa;
+    border-width: 10px;
+  }
+  /* Fill */
+  &:after{
+    top: -9px;
+    left: 12px;
+    border-bottom-color: white;
+    border-width: 10px;
+  }
+}

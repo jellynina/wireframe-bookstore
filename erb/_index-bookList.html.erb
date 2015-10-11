@@ -1,0 +1,18 @@
+<ul class="books-list">
+	<% 5.times do %>
+	<li>
+		<ul class="books-list-section">
+			<li>
+				<img src="img/bookCover<%= rand(5) %>.jpg" />
+			</li>
+			<li>
+				<h2><%= lorem_words(4+rand(3)) %></h2>
+				<h4><a href="">Author <%= lorem_words(1+rand(1)) %></a></h4>
+				<div class="intro">
+					<p><%= lorem_sentences(2+rand(2)) %></p>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<% end %>
+</ul>
